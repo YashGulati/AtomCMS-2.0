@@ -2,6 +2,10 @@
 
 $dbc = mysqli_connect('localhost', 'yash', 'yash', 'yashdb');
 
+DEFINE('D_TEMPLATE', 'template');
+
+include('functions/data.php');
+
 $site_title = 'AtomCMS 2.0';
 
 if(isset($_GET['page']))
@@ -9,8 +13,6 @@ if(isset($_GET['page']))
 else
   $pageid = 1;
 
-$q = "SELECT * FROM pages WHERE id = $pageid";
-$r = mysqli_query($dbc, $q);
-$page = mysqli_fetch_assoc($r);
+$page = data_page($dbc, $pageid);
 
 ?>
