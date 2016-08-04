@@ -5,6 +5,7 @@ $dbc = mysqli_connect('localhost', 'yash', 'yash', 'yashdb');
 DEFINE('D_TEMPLATE', 'template');
 
 include('functions/data.php');
+include('functions/template.php');
 
 $site_title = 'AtomCMS 2.0';
 
