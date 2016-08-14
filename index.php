@@ -14,7 +14,7 @@
 
   <div class="container">
     <h1><?php echo $page['header']; ?></h1>
-    <p><?php echo $page['page_body']; ?></p>
+    <?php echo $page['page_formatted']; ?>
   </div>
 
 <?php include(D_TEMPLATE.'/footer.php') ?>
