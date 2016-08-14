@@ -9,9 +9,8 @@
 
   </head>
   <body>
-
+<div id="wrap">
   <?php include(D_TEMPLATE.'/navigation.php') ?>
-
   <div class="container">
     <h1><?php echo $page['header']; ?></h1>
     <?php echo $page['page_formatted']; ?>
@@ -21,8 +20,10 @@
     </pre>
     <?php } ?>
   </div>
-
+</div>
 <?php include(D_TEMPLATE.'/footer.php') ?>
-
+<div id="console-debug">
+  Test Debug Window
+</div>
   </body>
 </html>
