@@ -15,6 +15,11 @@
   <div class="container">
     <h1><?php echo $page['header']; ?></h1>
     <?php echo $page['page_formatted']; ?>
+    <?php if(isset($_GET['debug']) == 1){ ?>
+    <pre>
+      <?php print_r($page); ?>
+    </pre>
+    <?php } ?>
   </div>
 
 <?php include(D_TEMPLATE.'/footer.php') ?>
